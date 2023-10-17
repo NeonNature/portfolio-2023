@@ -2,7 +2,7 @@
 'use client'
 import React, { useEffect, useMemo, useState } from 'react'
 
-const words = ['Neon.', 'Min Maung Maung.']
+const words = ['        Neon        ', 'Min Maung Maung']
 const animationDelay = 80
 
 export default function RotatingName() {
@@ -51,7 +51,7 @@ export default function RotatingName() {
               }ms`,
             }}
           >
-            {letter}
+            {letter === ' ' ? `\u00A0` : letter}
           </span>
         )
       }),
@@ -80,7 +80,6 @@ export default function RotatingName() {
 
   return (
     <div className="name-container">
-      <p>I am</p>
       <p>
         <span className="name-word green">{words0}</span>
         <span className="name-word belize">{words1}</span>
