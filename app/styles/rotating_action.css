@@ -1,0 +1,37 @@
+.rotating-action-expand {
+  vertical-align: -8px;
+  display: inline-block;
+  overflow: hidden;
+  animation: reveal 10s ease infinite;
+  max-width: 0%;
+}
+
+.rotating-action-expand.delay-1 {
+  animation-delay: 4s;
+}
+
+.rotating-action-expand.delay-2 {
+  animation-delay: 8s;
+}
+
+.rotating-action-expand.delay-3 {
+  animation-delay: 9s;
+}
+
+@keyframes reveal {
+  0% {
+    max-width: 0;
+  }
+
+  25% {
+    max-width: 100%;
+  }
+
+  50% {
+    max-width: 0;
+  }
+
+  100% {
+    max-width: 0;
+  }
+}

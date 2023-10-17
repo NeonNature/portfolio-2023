@@ -9,10 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
-    "react-awesome-reveal": "^4.2.5",
     "react-dom": "latest"
   },
   "devDependencies": {
