@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "react-reveal": "^1.2.2"
+    "react-awesome-reveal": "^4.2.5",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",

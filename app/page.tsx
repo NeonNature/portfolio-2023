@@ -2,6 +2,7 @@
 import RotatingName from './components/RotatingName'
 import IntroDivider from './components/waves/IntroDivider'
 import WaveTwo from './components/waves/WaveTwo'
+import { Fade } from 'react-awesome-reveal'
 import './styles/styles.css'
 
 export default function Home() {
@@ -14,7 +15,10 @@ export default function Home() {
           <p className="intro-action-container">
             A Front-End Developer who
             <br />
-            <span className="intro-action-c">C</span>reate
+            <span className="intro-action-c">C</span>
+            <Fade direction={'left'}>
+              <span>reate</span>
+            </Fade>
             <span className="intro-action-o">O</span>ptimize
             <span className="intro-action-d">D</span>ebug
             <span className="intro-action-e">E</span>xplore
