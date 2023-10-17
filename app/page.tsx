@@ -14,9 +14,6 @@ export default function Home() {
           <hr className="intro-name-divider" />
           <RotatingAction />
         </div>
-        {/* <div className="flex items-center justify-center">
-          <Avatar />
-        </div> */}
       </div>
       <IntroDivider />
       <div className="content-two">

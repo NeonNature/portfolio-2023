@@ -80,8 +80,8 @@ export default function RotatingName() {
   return (
     <div className="name-container">
       <p>
-        <span className="name-word green">{words0}</span>
-        <span className="name-word belize">{words1}</span>
+        <span className="name-word neon">{words0}</span>
+        <span className="name-word mmm">{words1}</span>
       </p>
     </div>
   )

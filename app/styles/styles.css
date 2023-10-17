@@ -4,8 +4,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.intro-content {
-  /* padding: 100px; */
+.intro-underline {
+  text-decoration: underline wavy orange;
 }
 
 .content-two {
@@ -20,11 +20,11 @@ body {
 }
 
 .intro-name-divider {
-  @apply text-center;
-  height: 5px;
   padding: 2px 0;
   background-color: #2980b9;
-  width: 15px;
+  width: 111px;
+  display: flex;
+  margin: 30px auto 10px;
 }
 
 .content-one {
@@ -36,44 +36,12 @@ body {
   min-height: calc(100vh);
 }
 
-.intro-action-container {
-  /* @apply font-bold; */
-  /* margin-top: 60px;
-  margin-left: 105px; */
-  font-size: 20px;
-}
-
-.intro-action-c {
-  font-size: 36px;
-}
-
-.intro-action-o {
-  font-size: 36px;
-}
-
-.intro-action-d {
-  font-size: 36px;
-}
-
-.intro-action-e {
-  font-size: 36px;
-}
-
-.intro-action-remaining {
-}
-
 /* Rotating Name */
 
 .name-container {
   @apply font-bold;
   font-size: 60px;
-  /* position: absolute; */
-  /* width: 1000px; */
-  /* left: 30%; */
-  /* margin-left: -225px; */
   height: 70px;
-  /* top: 35%; */
-  /* margin-top: -20px; */
 }
 
 .name-word {
@@ -102,10 +70,11 @@ body {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.belize {
+.mmm {
   color: #2980b9;
 }
 
-.green {
+.neon {
+  padding-left: 90px;
   color: #16a085;
 }

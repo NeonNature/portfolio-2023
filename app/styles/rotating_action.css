@@ -1,37 +1,41 @@
-.rotating-action-expand {
+.rotating-action-word {
   vertical-align: -8px;
   display: inline-block;
   overflow: hidden;
-  animation: reveal 10s ease infinite;
-  max-width: 0%;
+  animation: reveal 4s ease infinite;
+  max-width: 0;
+  transition: all 1s ease-in-out;
+  font-size: 20px;
 }
 
-.rotating-action-expand.delay-1 {
-  animation-delay: 4s;
+.rotating-action-word.expand {
+  transition-delay: 1s;
+  max-width: 100%;
 }
 
-.rotating-action-expand.delay-2 {
-  animation-delay: 8s;
+.intro-action-container {
+  font-size: 20px;
+  min-width: 550px;
+  transition: width 3s ease;
 }
 
-.rotating-action-expand.delay-3 {
-  animation-delay: 9s;
+.intro-action-word {
+  font-size: 36px;
+  font-weight: 700;
 }
 
-@keyframes reveal {
-  0% {
-    max-width: 0;
-  }
+.intro-action-word.c {
+  color: #b084cc;
+}
 
-  25% {
-    max-width: 100%;
-  }
+.intro-action-word.o {
+  color: #ff9b71;
+}
 
-  50% {
-    max-width: 0;
-  }
+.intro-action-word.d {
+  color: #e84855;
+}
 
-  100% {
-    max-width: 0;
-  }
+.intro-action-word.e {
+  color: #474973;
 }
