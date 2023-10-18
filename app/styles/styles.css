@@ -12,11 +12,45 @@ body {
   background-color: #0077b6;
   min-height: calc(25vh + 450px);
   margin-top: -450px;
-  padding-top: 70px;
+  padding-top: 120px;
   margin-bottom: -450px;
+}
 
-  color: #fff;
-  font-weight: bold;
+.details-content {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  padding: 20px;
+  animation: 3s floating infinite ease-in-out;
+  margin-left: 25px;
+}
+
+.details-outline-green {
+  text-decoration: underline wavy #16a085;
+  background-color: #16a085;
+  padding: 2px;
+  font-weight: 700;
+}
+
+.details-underline-blue {
+  text-decoration: underline wavy #2980b9;
+  font-weight: 700;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .intro-name-divider {
