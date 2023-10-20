@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useMemo, useState } from 'react'
+import '../styles/rotating_name.css'
 
 const words = ['        Neon        ', 'Min Maung Maung']
 const animationDelay = 80

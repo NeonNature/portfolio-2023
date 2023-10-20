@@ -1,0 +1,40 @@
+.name-container {
+  @apply font-bold;
+  font-size: 60px;
+  height: 70px;
+}
+
+.name-word {
+  position: absolute;
+  width: fit-content;
+}
+
+.name-letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.name-letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.name-letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.name-letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mmm {
+  color: #2980b9;
+}
+
+.neon {
+  padding-left: 90px;
+  color: #16a085;
+}
