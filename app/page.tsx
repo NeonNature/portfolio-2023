@@ -4,6 +4,7 @@ import WaveTwo from './components/waves/WaveTwo'
 import './styles/styles.css'
 import RotatingAction from './components/RotatingAction'
 import Avatar from './components/Avatar'
+import Actions from './components/Actions'
 
 export default function Home() {
   return (
@@ -28,15 +29,18 @@ export default function Home() {
                 <span className="details-highlight-purple">
                   pixel perfection
                 </span>
-                , and slightly obsessed with animations. But here&apos;s the
-                kicker – I&apos;ve got a secret love for time travel.
+                , and slightly obsessed with{' '}
+                <span className="details-highlight-animate">animations</span>.
+                But here&apos;s the kicker – I&apos;ve got a secret love for
+                time travel.
               </p>
               <p className="mt-4">
                 While I can&apos;t make you jump through centuries, I can sure
                 take your website on a journey through pixel magic and
-                animations that&apos;ll make it feel like a time warp. Buckle
-                up, because we&apos;re about to make the digital clock spin
-                backward!
+                animations that&apos;ll make it feel like a{' '}
+                <span className="details-highlight-time">time warp</span>.
+                Buckle up, because we&apos;re about to make the digital clock
+                spin backward!
               </p>
             </div>
           </div>
@@ -46,7 +50,9 @@ export default function Home() {
         </div>
       </div>
       <WaveTwo />
-      <div className="content-three"> aaaaaa </div>
+      <div className="content-three">
+        <Actions />
+      </div>
     </main>
   )
 }

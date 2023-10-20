@@ -29,27 +29,90 @@ body {
   margin-left: 25px;
 }
 
-.details-outline-green {
+.details-highlight-green {
   text-decoration: underline wavy #16a085;
   background-color: #16a085;
   padding: 2px;
   font-weight: 700;
 }
 
-.details-underline-blue {
-  text-decoration: underline wavy #2980b9;
+.details-highlight-blue {
   font-weight: 700;
+}
+
+.details-highlight-purple {
+  text-decoration: underline solid #474973 4px;
+}
+
+.details-highlight-animate {
+  @apply inline-block;
+  animation: 1s shudder infinite ease;
+  font-style: italic;
+}
+
+.details-highlight-time {
+  animation: rainbow 5s infinite;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+}
+
+@keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: CadetBlue;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  70% {
+    color: cyan;
+  }
+  80% {
+    color: DeepPink;
+  }
+  90% {
+    color: DodgerBlue;
+  }
+  100% {
+    color: orange;
+  }
 }
 
 @keyframes floating {
   0% {
-    transform: translate(0, 0px);
+    transform: translateY(0);
   }
   50% {
-    transform: translate(0, 15px);
+    transform: translateY(15px);
   }
   100% {
-    transform: translate(0, -0px);
+    transform: translateY(0);
+  }
+}
+
+@keyframes shudder {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(-1px);
   }
 }
 
