@@ -130,5 +130,12 @@ body {
 }
 
 .content-three {
-  min-height: calc(100vh);
+  @apply flex;
+  min-height: 100vh;
+  padding: 25px;
+  gap: 8px;
+}
+
+.content-four {
+  min-height: 100vh;
 }

@@ -1,3 +1,32 @@
 .action-icon {
-  max-width: 250px;
+  max-width: 200px;
+}
+
+.action-formula {
+  background-color: rgb(249, 197, 78);
+  padding: 5px;
+}
+
+.action-strikeout {
+  text-decoration: line-through;
+}
+
+.action-title {
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.action-content {
+  font-style: italic;
+}
+
+.action-section {
+  @apply flex justify-around items-center flex-col;
+  width: calc(100% / 3);
+  padding: 16px;
+}
+
+.action-section:nth-of-type(2) {
+  border-inline: 1px solid #03cdcc;
 }
