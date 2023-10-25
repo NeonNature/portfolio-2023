@@ -5,6 +5,7 @@ import './styles/styles.css'
 import RotatingAction from './components/RotatingAction'
 import Avatar from './components/Avatar'
 import Actions from './components/Actions'
+import Modal from './components/utilities/Modal'
 
 export default function Home() {
   return (
@@ -54,7 +55,9 @@ export default function Home() {
         <Actions />
       </div>
       <div className="content-four">
-        <div>aaaaa</div>
+        <div>
+          <Modal />
+        </div>
       </div>
     </main>
   )
