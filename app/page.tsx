@@ -5,7 +5,7 @@ import './styles/styles.css'
 import RotatingAction from './components/RotatingAction'
 import Avatar from './components/Avatar'
 import Actions from './components/Actions'
-import Modal from './components/utilities/Modal'
+import ProjectCard from './components/ProjectCard'
 
 export default function Home() {
   return (
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
       <div className="content-four">
         <div>
-          <Modal />
+          <ProjectCard />
         </div>
       </div>
     </main>

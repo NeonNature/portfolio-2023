@@ -1,0 +1,8 @@
+.project-card {
+  @apply flex flex-col items-center justify-center;
+  border: 1px solid #000;
+  border-radius: 16px;
+  width: 25%;
+  padding: 16px;
+  margin: 16px;
+}
