@@ -42,6 +42,10 @@ body.modal-active {
   position: relative;
 }
 
+.modal-button {
+  @apply cursor-pointer;
+}
+
 @keyframes unfoldIn {
   0% {
     transform: scaleY(0.005) scaleX(0);
