@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
+:root {
+  --showcase-lankyone: #410740;
+  --showcase-bettercast: #3373b8;
+  --showcase-appvantageasia: #000000;
+  --showcase-m: #43aa8b;
+  --showcase-legacy: #af5d63;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -138,4 +146,10 @@ body {
 
 .content-four {
   min-height: 100vh;
+}
+
+.section-project-title {
+  font-size: 36px;
+  font-style: italic;
+  text-align: center;
 }

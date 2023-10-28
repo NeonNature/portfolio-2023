@@ -55,6 +55,7 @@ export default function Home() {
         <Actions />
       </div>
       <div className="content-four">
+        <h1 className="section-project-title">Showcase</h1>
         <div>
           <ProjectCard />
         </div>
