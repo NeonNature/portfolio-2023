@@ -3,6 +3,9 @@ import './../styles/projects.css'
 import { ReactNode, useMemo, useState } from 'react'
 import Image from 'next/image'
 import math from '../../public/math.gif'
+import LanKyoneAdmin from '../../public/lankyone/Admin.png'
+import LanKyoneLogin from '../../public/lankyone/Login.jpg'
+import LanKyoneRoute from '../../public/lankyone/Route.png'
 
 interface CardProps {
   trigger: number
@@ -49,11 +52,40 @@ export default function ProjectCard() {
         className="project-bg-lankyone"
         name="Lan Kyone"
       >
-        <Image
-          className="action-icon"
-          src={math}
-          alt="Animated icon of math symbols popping out of a book"
-        />
+        <div className="flex flex-row">
+          <Image
+            className="project-pic-lankyone-admin"
+            src={LanKyoneAdmin}
+            alt="Admin Panel of Lan Kyone App"
+          />
+          <Image
+            className="profile-pic-lankyone-login"
+            src={LanKyoneLogin}
+            alt="Login Panel of Lan Kyone App"
+          />
+          <Image
+            className="profile-pic-lankyone-route"
+            src={LanKyoneRoute}
+            alt="Route Panel of Lan Kyone App"
+          />
+        </div>
+        <p className="project-">
+          Lan Kyone is where all began for InnovatoryMM, my startup adventure.
+          It&apos;s a simple ride-sharing platform designed with university
+          students in mind, by university students. This brainchild of ours made
+          quite a splash, bagging the first runner-up spot in the Unihack
+          Challenge 2018 and taking home the gold in the Tech for Life category
+          at the Phandeeyar Startup Challenge.
+          <br />
+          Our journey even got some social media buzz and media coverage! But,
+          you know, those were the days when giants like Grab and Uber ruled the
+          ride-sharing realm. Lan Kyone put up a good fight, but when Grab
+          introduced their GrabShare feature, well, it was a tough game.
+          <br />
+          Our development team consisted of just two devs, and I am proud to say
+          that I was in charge of all front-end aspects; the app, the landing
+          pages and more! There were multiple iterations of designs
+        </p>
       </Card>
       <Card
         trigger={2}

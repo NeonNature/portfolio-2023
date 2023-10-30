@@ -19,6 +19,15 @@
   max-height: 0;
   transition: all 0.5s ease;
   overflow: hidden;
+  font-size: 18px;
+  max-width: 600px;
+
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.3px);
+  -webkit-backdrop-filter: blur(17.3px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
 }
 
 .project-title {
@@ -34,6 +43,7 @@
 .project-card.expand,
 .project-card.expand .project-content {
   max-height: 1000px;
+  cursor: auto;
 }
 
 .project-bg-lankyone {
@@ -64,4 +74,13 @@
   background-color: var(--showcase-legacy);
   background-image: radial-gradient(#e5e5f7 0.5px, transparent 0.5px),
     radial-gradient(#e5e5f7 0.5px, var(--showcase-legacy) 0.5px);
+}
+
+.project-pic-lankyone-admin {
+  max-width: 450px;
+}
+
+.profile-pic-lankyone-login,
+.profile-pic-lankyone-route {
+  max-width: 250px;
 }
