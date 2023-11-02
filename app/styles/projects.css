@@ -20,6 +20,7 @@
   transition: all 0.5s ease;
   overflow: hidden;
   font-size: 18px;
+  padding: 0;
 
   background: rgba(255, 255, 255, 1);
   border-radius: 16px;
@@ -43,6 +44,10 @@
 .project-card.expand .project-content {
   max-height: 1000px;
   cursor: auto;
+}
+
+.project-card.expand .project-content {
+  padding: 30px;
 }
 
 .project-bg-lankyone {
@@ -82,4 +87,8 @@
 .profile-pic-lankyone-login,
 .profile-pic-lankyone-route {
   max-width: 250px;
+}
+
+.project-details {
+  padding: 100px;
 }
