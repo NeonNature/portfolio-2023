@@ -87,6 +87,7 @@
 .profile-pic-lankyone-login,
 .profile-pic-lankyone-route {
   max-width: 250px;
+  height: 100%;
 }
 
 .project-details {
