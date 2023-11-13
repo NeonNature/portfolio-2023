@@ -2,7 +2,6 @@
 import './../styles/projects.css'
 import { ReactNode, useMemo, useState } from 'react'
 import Image from 'next/image'
-import math from '../../public/math.gif'
 import LanKyone from '../../public/projects/lankyone.png'
 import BetterCast from '../../public/projects/bettercast.jpeg'
 import AppvantageAsia from '../../public/projects/appvantageasia.png'

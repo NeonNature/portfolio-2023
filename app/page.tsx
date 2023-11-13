@@ -6,6 +6,7 @@ import RotatingAction from './components/RotatingAction'
 import Avatar from './components/Avatar'
 import Actions from './components/Actions'
 import ProjectCard from './components/ProjectCard'
+import Testimonials from './components/Testimonials'
 
 export default function Home() {
   return (
@@ -56,6 +57,9 @@ export default function Home() {
       </div>
       <div className="content-four">
         <ProjectCard />
+      </div>
+      <div className="content-five">
+        <Testimonials />
       </div>
     </main>
   )
