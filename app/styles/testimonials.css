@@ -1,12 +1,18 @@
-.swiper {
+.testimonial-swiper {
   width: 100%;
   max-width: 700px;
   height: 100%;
   min-height: 300px;
   margin: 25px;
+  --swiper-navigation-size: 22px;
+  --swiper-navigation-sides-offset: 0px;
 }
 
-.swiper-slide {
+.swiper-wrapper {
+  align-items: center;
+}
+
+.testimonial-swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
 
@@ -34,8 +40,23 @@
     0px 20px 15px rgba(3, 7, 18, 0.03),
     0px 32px 24px rgba(3, 7, 18, 0.02);
 
-  padding: 100px 0 25px;
+  padding: 100px 25px 25px;
   margin: 25px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  text-align: left;
+}
+
+.testimonial-role,
+.testimonial-name {
+  color: #fff;
+}
+
+.testimonial-role {
+  margin-bottom: 50px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 24px;
 }
