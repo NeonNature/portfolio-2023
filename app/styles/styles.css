@@ -145,7 +145,7 @@ body {
 }
 
 .content-four {
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .content-five {
@@ -153,4 +153,5 @@ body {
   min-height: 100vh;
   background: linear-gradient(90deg, #fff 33%, rgba(0, 0, 0, 0) 33%),
     linear-gradient(90deg, #2980b9 66%, #fff 66%);
+  margin-top: -140px;
 }
