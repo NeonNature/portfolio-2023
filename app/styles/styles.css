@@ -158,6 +158,8 @@ body {
 }
 
 .content-six {
+  @apply flex justify-center;
   background-color: #252525;
+  min-height: 100vh;
   padding: 50px;
 }
