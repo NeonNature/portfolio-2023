@@ -9,6 +9,7 @@ import ProjectCard from './components/ProjectCard'
 import Testimonials from './components/Testimonials'
 import TestimonialDividerStart from './components/waves/TestimonialDividerStart'
 import TestimonialDividerEnd from './components/waves/TestimonialDividerEnd'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -65,6 +66,9 @@ export default function Home() {
         <Testimonials />
       </div>
       <TestimonialDividerEnd />
+      <div className="content-six">
+        <Contact />
+      </div>
     </main>
   )
 }

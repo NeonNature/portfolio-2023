@@ -156,3 +156,8 @@ body {
   margin-top: -140px;
   margin-bottom: -450px;
 }
+
+.content-six {
+  min-height: 100vh;
+  background-color: #252525;
+}
