@@ -8,6 +8,7 @@ import Actions from './components/Actions'
 import ProjectCard from './components/ProjectCard'
 import Testimonials from './components/Testimonials'
 import TestimonialDividerStart from './components/waves/TestimonialDividerStart'
+import TestimonialDividerEnd from './components/waves/TestimonialDividerEnd'
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
       <div className="content-five">
         <Testimonials />
       </div>
+      <TestimonialDividerEnd />
     </main>
   )
 }
