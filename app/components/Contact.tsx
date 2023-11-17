@@ -1,6 +1,12 @@
 'use client'
 import { useState } from 'react'
 import '../styles/contact.scss'
+import Icon_LinkedIn from './waves/Icon_LinkedIn'
+import Icon_Github from './waves/Icon_Github'
+
+const linkedinUrl = 'https://www.linkedin.com/in/min-maung-maung/'
+const githubUrl = 'https://github.com/NeonNature'
+const resumeUrl = '/resume/Min Maung Maung ; Neon - Frontend Developer.pdf'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,17 +27,33 @@ export default function Contact() {
     console.log('test')
   }
 
+  const handleUrl = (link: string) => window.open(link, '_blank', 'noreferrer')
+
   return (
-    <div className="flex flex-row items-center justify-center">
+    <div className="flex flex-row items-center justify-center gap-16">
       <div>
-        <div>Get in touch!</div>
-        <div className="flex flex-col">
-          <div>
-            <button>LinkedIn</button>
-            <button>CodePen</button>
-            <button>Github</button>
-          </div>
-          <button>Resume</button>
+        <div className="contact-title">
+          Get in <span>TOUCH!</span>
+        </div>
+        <div className="flex flex-row">
+          <button
+            className="contact-btn linkedin"
+            onClick={() => handleUrl(linkedinUrl)}
+          >
+            <Icon_LinkedIn />
+          </button>
+          <button
+            className="contact-btn resume"
+            onClick={() => handleUrl(resumeUrl)}
+          >
+            Resume
+          </button>
+          <button
+            className="contact-btn github"
+            onClick={() => handleUrl(githubUrl)}
+          >
+            <Icon_Github />
+          </button>
         </div>
       </div>
       <div>
@@ -42,17 +64,19 @@ export default function Contact() {
             onChange={handleInput}
             name="subject"
             type="text"
-            placeholder="Subject Placeholder"
+            placeholder="Subject"
           />
           <textarea
             id="contact-body"
             value={formData.message}
             onChange={handleInput}
             name="message"
-            placeholder="Body Placeholder"
+            placeholder="Message"
             rows={10}
           ></textarea>
-          <button type="submit">Submit</button>
+          <button id="contact-submit" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>

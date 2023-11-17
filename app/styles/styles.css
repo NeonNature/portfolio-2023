@@ -158,6 +158,6 @@ body {
 }
 
 .content-six {
-  min-height: 100vh;
   background-color: #252525;
+  padding: 50px;
 }

@@ -4,14 +4,99 @@
   padding: 15px;
   margin: 15px;
   background-color: #2f2f2f;
+  transition: all 0.5s ease;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.87);
 
-  &:focus-visible {
-    outline: #297fb9 auto 1px;
+  &:focus {
+    outline: #297fb9 solid 3px;
   }
 }
 
-#contact-subject {
+#contact-submit {
+  @apply text-center block;
+  width: 50%;
+  padding: 15px;
+  background-color: #2f2f2f;
+
+  color: rgba(255, 255, 255, 0.87);
+  transition: all 0.5s ease;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 2px solid #297fb9;
+  letter-spacing: 5px;
+
+  &:hover {
+    background-color: #297fb9;
+    font-size: 18px;
+    letter-spacing: normal;
+  }
 }
 
-#contact-body {
+.contact-title {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 36px;
+  margin-bottom: 30px;
+
+  span {
+    padding: 5px;
+    background-color: #297fb9;
+  }
+}
+
+.contact-btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.5s ease;
+  color: rgba(255, 255, 255, 0.6);
+
+  svg {
+    fill: rgba(255, 255, 255, 0.6);
+    width: 25px;
+    transition: all 0.5s ease;
+    height: 25px;
+  }
+
+  &.linkedin {
+    animation: 3s floating infinite ease-in-out;
+  }
+
+  &.resume {
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    margin-inline: 15px;
+    flex-grow: 1;
+    animation: 3s floating infinite ease-in-out;
+    animation-delay: 1s;
+  }
+
+  &.github {
+    animation: 3s floating infinite ease-in-out;
+    animation-delay: 2s;
+  }
+
+  &:focus,
+  &:hover {
+    outline: #297fb9 solid 3px;
+    border: 1px solid #297fb9;
+    color: #297fb9;
+    animation-play-state: paused;
+
+    svg {
+      fill: #297fb9;
+    }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
