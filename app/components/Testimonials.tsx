@@ -8,6 +8,7 @@ import Htoo from '../../public/testimonials/htoo.jpeg'
 import Hunter from '../../public/testimonials/hunter.jpeg'
 import Sarada from '../../public/testimonials/sarada.jpeg'
 import Waing from '../../public/testimonials/waing.jpeg'
+import DeeD from '../../public/testimonials/deed.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
@@ -184,6 +185,17 @@ export default function Testimonials() {
             I&apos;ve seen him learning continuously and performing diligently
             at a top level for years, so I think he&apos;ll be a great talent
             for whatever company he&apos;s working in or joining next.
+          </TestimonialCard>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <TestimonialCard
+            image={DeeD}
+            alt={'Profile Picture of Woody'}
+            name="Woody"
+            role="Personal Supervisor, Home"
+          >
+            Meow.
           </TestimonialCard>
         </SwiperSlide>
       </Swiper>
