@@ -6,20 +6,20 @@
   margin: 25px;
   --swiper-navigation-size: 22px;
   --swiper-navigation-sides-offset: 0px;
-}
 
-.swiper-wrapper {
-  align-items: center;
-}
+  .swiper-wrapper {
+    align-items: center;
+  }
 
-.testimonial-swiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .testimonial-avatar {

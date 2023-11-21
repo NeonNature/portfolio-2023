@@ -1,21 +1,17 @@
 'use client'
-import './../styles/testimonials.css'
+import './../styles/testimonials.scss'
 import { ReactNode } from 'react'
 import Image, { StaticImageData } from 'next/image'
-import Ben from '../../public/testimonials/ben.jpeg'
-import Clara from '../../public/testimonials/clara.jpeg'
-import Htoo from '../../public/testimonials/htoo.jpeg'
-import Hunter from '../../public/testimonials/hunter.jpeg'
-import Sarada from '../../public/testimonials/sarada.jpeg'
-import Waing from '../../public/testimonials/waing.jpeg'
-import DeeD from '../../public/testimonials/deed.png'
+import Ben from '/public/testimonials/ben.jpeg'
+import Clara from '/public/testimonials/clara.jpeg'
+import Htoo from '/public/testimonials/htoo.jpeg'
+import Hunter from '/public/testimonials/hunter.jpeg'
+import Sarada from '/public/testimonials/sarada.jpeg'
+import Waing from '/public/testimonials/waing.jpeg'
+import DeeD from '/public/testimonials/deed.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
-
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
 
 interface TestimonialCardProps {
   image: StaticImageData
@@ -196,6 +192,10 @@ export default function Testimonials() {
             role="Personal Supervisor, Home"
           >
             Meow.
+            <br /> <br />
+            (Disclaimer: Due to intense language barrier, I am not able to
+            translate his expression of words, but I believe he is saying
+            something good about me)
           </TestimonialCard>
         </SwiperSlide>
       </Swiper>

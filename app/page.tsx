@@ -1,7 +1,6 @@
 import RotatingName from './components/RotatingName'
 import IntroDivider from './components/waves/IntroDivider'
 import WaveTwo from './components/waves/WaveTwo'
-import './styles/styles.css'
 import RotatingAction from './components/RotatingAction'
 import Avatar from './components/Avatar'
 import Actions from './components/Actions'
@@ -10,6 +9,13 @@ import Testimonials from './components/Testimonials'
 import TestimonialDividerStart from './components/waves/TestimonialDividerStart'
 import TestimonialDividerEnd from './components/waves/TestimonialDividerEnd'
 import Contact from './components/Contact'
+import Projects from './components/Projects'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+import './styles/styles.css'
 
 export default function Home() {
   return (
@@ -59,7 +65,8 @@ export default function Home() {
         <Actions />
       </div>
       <div className="content-four">
-        <ProjectCard />
+        {/* <ProjectCard /> */}
+        <Projects />
       </div>
       <TestimonialDividerStart />
       <div className="content-five">
