@@ -24,23 +24,23 @@ export default function Contact() {
     e.preventDefault()
     setFormState(status.Sending)
 
-    // emailjs
-    //   .sendForm(
-    //     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-    //     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-    //     form.current || '',
-    //     process.env.NEXT_PUBLIC_EMAILJS_USER_ID || ''
-    //   )
-    //   .then(
-    //     (result) => {
-    // console.log(result.text)
-    setFormState(status.Sent)
-    //     },
-    //     (error) => {
-    //       console.log(error.text)
-    //       setFormState(status.Error)
-    //     }
-    //   )
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        form.current || '',
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID || ''
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          setFormState(status.Sent)
+        },
+        (error) => {
+          console.log(error.text)
+          setFormState(status.Error)
+        }
+      )
   }
 
   const handleUrl = (link: string) => window.open(link, '_blank', 'noreferrer')

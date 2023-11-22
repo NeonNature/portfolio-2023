@@ -14,6 +14,7 @@ import Projects from './components/Projects'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import 'swiper/css/effect-fade'
 
 import './styles/styles.css'
 
