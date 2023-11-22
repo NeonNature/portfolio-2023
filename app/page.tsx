@@ -60,10 +60,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <WaveTwo />
       <div className="content-three">
         <Actions />
       </div>
+      <WaveTwo />
       <div className="content-four">
         {/* <ProjectCard /> */}
         <Projects />
