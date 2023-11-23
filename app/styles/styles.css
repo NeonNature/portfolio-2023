@@ -21,9 +21,12 @@ body {
   min-height: calc(25vh + 450px);
   margin-top: -450px;
   padding-top: 120px;
+  margin-bottom: -450px;
+  padding-bottom: 250px;
 }
 
 .details-content {
+  @apply flex flex-row;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -47,56 +50,10 @@ body {
   font-weight: 700;
 }
 
-.details-highlight-purple {
-  text-decoration: underline solid #474973 4px;
-}
-
 .details-highlight-animate {
   @apply inline-block;
   animation: 1s shudder infinite ease;
   font-style: italic;
-}
-
-.details-highlight-time {
-  animation: rainbow 5s infinite;
-  font-weight: 700;
-  text-shadow: 2px 2px black;
-}
-
-@keyframes rainbow {
-  0% {
-    color: orange;
-  }
-  10% {
-    color: purple;
-  }
-  20% {
-    color: red;
-  }
-  30% {
-    color: CadetBlue;
-  }
-  40% {
-    color: yellow;
-  }
-  50% {
-    color: coral;
-  }
-  60% {
-    color: green;
-  }
-  70% {
-    color: cyan;
-  }
-  80% {
-    color: DeepPink;
-  }
-  90% {
-    color: DodgerBlue;
-  }
-  100% {
-    color: orange;
-  }
 }
 
 @keyframes floating {
@@ -111,18 +68,6 @@ body {
   }
 }
 
-@keyframes shudder {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(1px);
-  }
-  100% {
-    transform: translateX(-1px);
-  }
-}
-
 .intro-name-divider {
   padding: 2px 0;
   background-color: #2980b9;
@@ -134,20 +79,6 @@ body {
 .content-one {
   @apply flex items-center justify-center;
   height: calc(100vh - 140px);
-}
-
-.content-three {
-  @apply flex;
-  min-height: 100vh;
-  padding: 25px;
-  gap: 8px;
-  margin-bottom: -450px;
-  padding-bottom: 250px;
-  background-color: #0077b6;
-}
-
-.content-four {
-  /* min-height: 100vh; */
 }
 
 .content-five {

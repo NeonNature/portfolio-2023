@@ -30,44 +30,24 @@ export default function Home() {
       <IntroDivider />
       <div className="content-two">
         <div className="grid grid-cols-2">
-          <div className="flex items-center justify-center p-4">
+          <div className="flex flex-col items-center justify-center p-4">
             <div className="details-content">
               <p>
                 Hey, I&apos;m{' '}
                 <span className="details-highlight-blue">Min Maung Maung</span>{' '}
-                aka <span className="details-highlight-green">Neon</span>, your
-                friendly web guru, always chasing{' '}
-                <span className="details-highlight-purple">
-                  pixel perfection
-                </span>
-                , and slightly obsessed with{' '}
-                <span className="details-highlight-animate">animations</span>.
-                But here&apos;s the kicker – I&apos;ve got a secret love for
-                time travel.
-              </p>
-              <p className="mt-4">
-                While I can&apos;t make you jump through centuries, I can sure
-                take your website on a journey through pixel magic and
-                animations that&apos;ll make it feel like a{' '}
-                <span className="details-highlight-time">time warp</span>.
-                Buckle up, because we&apos;re about to make the digital clock
-                spin backward!
+                aka <span className="details-highlight-green">Neon</span>, a
+                Front-end Developer currently based in Myanmar.
               </p>
             </div>
+            <Actions />
           </div>
           <div className="flex items-center justify-center">
             <Avatar />
           </div>
         </div>
       </div>
-      <div className="content-three">
-        <Actions />
-      </div>
       <WaveTwo />
-      <div className="content-four">
-        {/* <ProjectCard /> */}
-        <Projects />
-      </div>
+      <Projects />
       <TestimonialDividerStart />
       <div className="content-five">
         <Testimonials />

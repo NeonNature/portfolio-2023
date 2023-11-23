@@ -6,7 +6,7 @@ import '../styles/actions.css'
 
 export default function Actions() {
   return (
-    <>
+    <div className="flex flex-row">
       <div className="action-section">
         <Image
           className="action-icon"
@@ -60,6 +60,6 @@ export default function Actions() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }

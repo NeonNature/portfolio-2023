@@ -1,5 +1,5 @@
 .action-icon {
-  max-width: 200px;
+  max-width: 75px;
 }
 
 .action-formula {
@@ -22,9 +22,11 @@
 }
 
 .action-section {
-  @apply flex justify-around items-center flex-col;
-  width: calc(100% / 3);
+  @apply flex justify-around items-center flex-row;
+  width: 100%;
   padding: 16px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .action-section:nth-of-type(2) {
