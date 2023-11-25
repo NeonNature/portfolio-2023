@@ -25,49 +25,6 @@ body {
   padding-bottom: 250px;
 }
 
-.details-content {
-  @apply flex flex-row;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 18px;
-  padding: 20px;
-  animation: 3s floating infinite ease-in-out;
-  margin-left: 25px;
-}
-
-.details-highlight-green {
-  text-decoration: underline wavy #16a085;
-  background-color: #16a085;
-  padding: 2px;
-  font-weight: 700;
-}
-
-.details-highlight-blue {
-  font-weight: 700;
-}
-
-.details-highlight-animate {
-  @apply inline-block;
-  animation: 1s shudder infinite ease;
-  font-style: italic;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .intro-name-divider {
   padding: 2px 0;
   background-color: #2980b9;

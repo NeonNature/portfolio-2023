@@ -31,14 +31,6 @@ export default function Home() {
       <div className="content-two">
         <div className="grid grid-cols-2">
           <div className="flex flex-col items-center justify-center p-4">
-            <div className="details-content">
-              <p>
-                Hey, I&apos;m{' '}
-                <span className="details-highlight-blue">Min Maung Maung</span>{' '}
-                aka <span className="details-highlight-green">Neon</span>, a
-                Front-end Developer currently based in Myanmar.
-              </p>
-            </div>
             <Actions />
           </div>
           <div className="flex items-center justify-center">
