@@ -19,6 +19,23 @@
   transition: width 3s ease;
 }
 
+.intro-line-breaker {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .intro-action-container {
+    min-width: 0;
+    padding: 25px;
+    text-align: center;
+    max-width: 350px;
+  }
+
+  .intro-line-breaker {
+    display: inline;
+  }
+}
+
 .intro-action-word {
   font-size: 36px;
   font-weight: 700;

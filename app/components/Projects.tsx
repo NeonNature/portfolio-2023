@@ -64,7 +64,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="project-container">
+    <div className="project-container flex-col md:flex-row">
       <div className="project-showcase-container">
         <Swiper
           onSwiper={setSwiper}

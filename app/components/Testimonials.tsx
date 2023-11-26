@@ -41,7 +41,7 @@ const TestimonialCard = ({
 
 export default function Testimonials() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

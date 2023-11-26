@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <IntroDivider />
       <div className="content-two">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col items-center justify-center p-4">
             <Actions />
           </div>

@@ -24,6 +24,7 @@ export default function RotatingAction() {
   return (
     <p className="intro-action-container">
       A <span className="intro-underline">Front-End Developer</span> who{' '}
+      <br className="intro-line-breaker" />
       <span className="intro-action-word c">
         C<span className={getClass(0)}>reate </span>
       </span>

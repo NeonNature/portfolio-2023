@@ -36,6 +36,7 @@
   &.idx-1.state-1,
   &.idx-2.state-2,
   &.idx-3.state-3 {
+    animation: morph 0.25s ease infinite;
     transition: all 1s ease;
     filter: none;
   }

@@ -46,7 +46,7 @@ export default function Contact() {
   const handleUrl = (link: string) => window.open(link, '_blank', 'noreferrer')
 
   return (
-    <div className="flex flex-row items-center justify-center gap-16">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-16">
       <div>
         <div className="contact-title">
           Get in <span>TOUCH!</span>

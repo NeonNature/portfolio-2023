@@ -47,6 +47,13 @@ body {
   margin-bottom: -450px;
 }
 
+@media (max-width: 767px) {
+  .content-five {
+    background: linear-gradient(90deg, #fff 10%, rgba(0, 0, 0, 0) 10%),
+      linear-gradient(90deg, #2980b9 90%, #fff 90%);
+  }
+}
+
 .content-six {
   @apply flex justify-center;
   background-color: #252525;

@@ -1,6 +1,7 @@
 .project-container {
-  @apply flex flex-row items-center;
+  @apply flex items-center;
   margin-block: 150px;
+  overflow: hidden;
 }
 
 .project-showcase-container {
@@ -24,6 +25,13 @@
 .project-carousel {
   margin-left: -150px;
   overflow: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .project-carousel {
+    margin: -150px auto 0;
+  }
 }
 
 .project-card {
