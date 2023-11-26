@@ -77,7 +77,6 @@
 
   & p:after {
     transform: translatey(0px);
-    animation: float2 5s ease-in-out infinite;
     content: '.';
     font-weight: bold;
     -webkit-text-fill-color: beige;

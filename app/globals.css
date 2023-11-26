@@ -5,15 +5,13 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
+
+  --showcase-lankyone: #410740;
+  --showcase-bettercast: #3373b8;
+  --showcase-appvantageasia: #080808;
+  --showcase-m: #43aa8b;
+  --showcase-legacy: #af5d63;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   color: rgb(var(--foreground-rgb));

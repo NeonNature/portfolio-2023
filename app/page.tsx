@@ -21,10 +21,13 @@ export default function Home() {
   return (
     <main className="w-full">
       <div className="content-one">
-        <div className="intro-content">
+        <div>
           <RotatingName />
           <hr className="intro-name-divider" />
           <RotatingAction />
+        </div>
+        <div className="intro-scroll-icon-wrapper">
+          <i className="intro-scroll-icon"></i>
         </div>
       </div>
       <IntroDivider />

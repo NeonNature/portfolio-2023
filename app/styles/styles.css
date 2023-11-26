@@ -1,13 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
-:root {
-  --showcase-lankyone: #410740;
-  --showcase-bettercast: #3373b8;
-  --showcase-appvantageasia: #080808;
-  --showcase-m: #43aa8b;
-  --showcase-legacy: #af5d63;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -38,6 +30,20 @@ body {
   height: calc(100vh - 140px);
 }
 
+.intro-scroll-icon {
+  border: solid #2980b9;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+}
+
+.intro-scroll-icon-wrapper {
+  position: absolute;
+  bottom: 20vh;
+  animation: 3s floating infinite ease-in-out;
+}
+
 .content-five {
   @apply flex items-center justify-center;
   min-height: 100vh;
@@ -59,4 +65,16 @@ body {
   background-color: #252525;
   min-height: 100vh;
   padding: 50px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
