@@ -1,9 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-import math from '/public/math.gif'
-import target from '/public/target.gif'
-import space from '/public/space.gif'
+import math from '/public/actions/math.gif'
+import target from '/public/actions/target.gif'
+import space from '/public/actions/space.gif'
 import '../styles/actions.scss'
 import { useState } from 'react'
 import { ActionBubbleProps, ActionSpeechProps } from '../types'
