@@ -64,8 +64,8 @@ export default function Actions() {
           title={<span className="details-popout">Hey there</span>}
         >
           Hey, I&apos;m{' '}
-          <span className="details-highlight-blue">Min Maung Maung</span> aka{' '}
-          <span className="details-highlight-green">Neon</span>, a Front-end
+          <span className="highlight-text-blue">Min Maung Maung</span> aka{' '}
+          <span className="highlight-bg-green">Neon</span>, a Front-end
           Developer currently based in Myanmar.
         </ActionSpeech>
         <ActionSpeech

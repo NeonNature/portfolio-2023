@@ -1,3 +1,5 @@
+@use 'highlight';
+
 .action-icon {
   max-width: 75px;
 }
@@ -98,23 +100,6 @@
   }
 }
 
-.details-highlight-green {
-  text-decoration: underline wavy #16a085;
-  background-color: #16a085;
-  padding: 2px;
-  font-weight: 700;
-}
-
-.details-highlight-blue {
-  font-weight: 700;
-}
-
-.details-highlight-animate {
-  @apply inline-block;
-  animation: 1s shudder infinite ease;
-  font-style: italic;
-}
-
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -132,7 +117,7 @@
 #details-precise,
 #details-voyage {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
 }
 
 #details-initial.state-1,
