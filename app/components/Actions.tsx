@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import math from '/public/math.gif'
 import target from '/public/target.gif'
-import astronaut from '/public/astronaut.gif'
+import space from '/public/space.gif'
 import '../styles/actions.scss'
 import { useState } from 'react'
 import { ActionBubbleProps, ActionSpeechProps } from '../types'
@@ -118,7 +118,7 @@ export default function Actions() {
           idx={3}
           hovered={hovered}
           handleHover={handleHover}
-          src={astronaut}
+          src={space}
           alt="Animated icon of an astronaut wandering in space"
         />
       </div>
