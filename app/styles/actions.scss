@@ -7,6 +7,7 @@
 .action-formula {
   background-color: rgb(249, 197, 78);
   padding: 5px;
+  color: #252525;
 }
 
 .action-strikeout {
@@ -153,10 +154,14 @@
     transform: translateY(0);
   }
 
-  .details-content p:after {
-    -webkit-text-fill-color: transparent;
-    text-shadow: 22px 22px transparent;
-    box-shadow: 22px 22px transparent;
-    background-color: transparent;
+  .details-content {
+    min-height: 175px;
+
+    p:after {
+      -webkit-text-fill-color: transparent;
+      text-shadow: 22px 22px transparent;
+      box-shadow: 22px 22px transparent;
+      background-color: transparent;
+    }
   }
 }
