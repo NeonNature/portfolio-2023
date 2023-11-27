@@ -58,12 +58,10 @@
 
 .details-content {
   @apply flex flex-row;
-  // background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  // border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 18px;
   padding: 20px;
   animation: 3s floating infinite ease-in-out;
@@ -78,7 +76,7 @@
     min-height: 100px;
   }
 
-  & p:after {
+  p:after {
     transform: translatey(0px);
     content: '.';
     font-weight: bold;
@@ -129,6 +127,14 @@
   }
 }
 
+#detils-initial,
+#details-fun,
+#details-precise,
+#details-voyage {
+  position: absolute;
+  width: 100%;
+}
+
 #details-initial.state-1,
 #details-initial.state-2,
 #details-initial.state-3,
@@ -142,8 +148,7 @@
 #details-voyage.state-1,
 #details-voyage.state-2 {
   opacity: 0;
-  display: none;
-  transform: rotateY(270deg);
+  transform: translateY(-50px);
 }
 
 .details-popout {
@@ -151,4 +156,22 @@
   font-weight: bold;
   font-size: 24px;
   transform: translateY(-41px) rotate(-4deg);
+}
+
+.action-speech {
+  margin-top: -15px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .action-section.idx-2 {
+    transform: translateY(0);
+  }
+
+  .details-content p:after {
+    -webkit-text-fill-color: transparent;
+    text-shadow: 22px 22px transparent;
+    box-shadow: 22px 22px transparent;
+    background-color: transparent;
+  }
 }
