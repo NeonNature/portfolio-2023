@@ -1,6 +1,6 @@
 'use client'
 import '../styles/project.scss'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 import LanKyone from '/public/projects/lankyone.png'
 import LanKyoneLogo from '/public/logo/lankyone.png'
@@ -24,16 +24,9 @@ import {
   Controller,
   EffectFade,
 } from 'swiper/modules'
-import { ReactNode, useState } from 'react'
+import { useState } from 'react'
 import type SwiperCore from 'swiper'
-
-interface ProjectCardProps {
-  className: string
-  children: ReactNode
-  logo?: StaticImageData
-  alt?: string
-  logoText?: string
-}
+import { ProjectCardProps } from '../types'
 
 // do not put SwiperSlide here; breaks swiperjs
 const ProjectCard = ({

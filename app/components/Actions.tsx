@@ -1,19 +1,12 @@
 'use client'
 
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import math from '/public/math.gif'
 import target from '/public/target.gif'
 import astronaut from '/public/astronaut.gif'
 import '../styles/actions.scss'
-import { ReactNode, useState } from 'react'
-
-interface ActionBubbleProps {
-  hovered: number
-  alt: string
-  src: StaticImageData
-  handleHover: (val: number) => void
-  idx: number
-}
+import { useState } from 'react'
+import { ActionBubbleProps, ActionSpeechProps } from '../types'
 
 const ActionBubble = ({
   src,
@@ -31,13 +24,6 @@ const ActionBubble = ({
       <Image className="action-icon" src={src} alt={alt} />
     </div>
   )
-}
-
-interface ActionSpeechProps {
-  id: string
-  hovered: number
-  title: ReactNode
-  children: ReactNode
 }
 
 const ActionSpeech = ({ id, hovered, title, children }: ActionSpeechProps) => {

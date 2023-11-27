@@ -1,7 +1,6 @@
 'use client'
 import './../styles/testimonials.scss'
-import { ReactNode } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import Ben from '/public/testimonials/ben.jpeg'
 import Clara from '/public/testimonials/clara.jpeg'
 import Htoo from '/public/testimonials/htoo.jpeg'
@@ -12,14 +11,7 @@ import DeeD from '/public/testimonials/deed.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
-
-interface TestimonialCardProps {
-  image: StaticImageData
-  alt: string
-  children: ReactNode
-  name: string
-  role: string
-}
+import { TestimonialCardProps } from '../types'
 
 // do not put SwiperSlide here; breaks swiperjs
 const TestimonialCard = ({
