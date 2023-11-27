@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser'
 
 const linkedinUrl = 'https://www.linkedin.com/in/min-maung-maung/'
 const githubUrl = 'https://github.com/NeonNature'
-const resumeUrl = '/resume/Min Maung Maung ; Neon - Frontend Developer.pdf'
+const resumeUrl = '/resume/Neon | Frontend Developer.pdf'
 
 enum status {
   Unsent = 'UNSENT',
