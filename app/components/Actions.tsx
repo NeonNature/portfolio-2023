@@ -47,7 +47,7 @@ export default function Actions() {
         <ActionSpeech
           id="details-initial"
           hovered={hovered}
-          title={<span className="details-popout">Hey there</span>}
+          title={<span className="details-popout">Hey there!</span>}
         >
           Hey, I&apos;m{' '}
           <span className="highlight-text-blue">Min Maung Maung</span> aka{' '}
