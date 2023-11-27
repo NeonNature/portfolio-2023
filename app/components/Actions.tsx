@@ -1,9 +1,9 @@
 'use client'
 
 import Image, { StaticImageData } from 'next/image'
-import math from '../../public/math.gif'
-import target from '../../public/target.gif'
-import astronaut from '../../public/astronaut.gif'
+import math from '/public/math.gif'
+import target from '/public/target.gif'
+import astronaut from '/public/astronaut.gif'
 import '../styles/actions.scss'
 import { ReactNode, useState } from 'react'
 
@@ -133,7 +133,7 @@ export default function Actions() {
           hovered={hovered}
           handleHover={handleHover}
           src={astronaut}
-          alt="Animated icon of an arrow hitting a target"
+          alt="Animated icon of an astronaut wandering in space"
         />
       </div>
     </>
