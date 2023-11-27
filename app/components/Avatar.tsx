@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import avatar from '../../public/avatar.jpg'
+import avatar from '/public/avatar.jpg'
 import '../styles/avatar.css'
 
 export default function Avatar() {
