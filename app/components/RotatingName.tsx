@@ -1,35 +1,46 @@
 'use client'
-import React, { useEffect, useMemo, useState } from 'react'
+import React, {
+  useEffect,
+  useMemo,
+  useState,
+  Dispatch,
+  SetStateAction,
+} from 'react'
 import '../styles/rotating_name.css'
+import { AnimatedWordProps } from '../types'
 
 const words = ['        Neon        ', 'Min Maung Maung']
 const animationDelay = 80
+
+const AnimatedWord = ({ className, word }: AnimatedWordProps) => {
+  return <span className={`name-word ${className}`}>{word}</span>
+}
 
 export default function RotatingName() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0)
   const [firstClassHelper, setFirstClassHelper] = useState('out')
   const [secondClassHelper, setSecondClassHelper] = useState('in')
 
+  const setClass = (
+    inClass: Dispatch<SetStateAction<string>>,
+    outClass: Dispatch<SetStateAction<string>>
+  ) => {
+    inClass('behind')
+    setTimeout(() => {
+      inClass('in')
+    }, 80)
+
+    outClass('out')
+  }
+
   useEffect(() => {
     const animateWords = () => {
       if (currentWordIndex === 0) {
         setCurrentWordIndex(1)
-
-        setFirstClassHelper('behind')
-        setTimeout(() => {
-          setFirstClassHelper('in')
-        }, 80)
-
-        setSecondClassHelper('out')
+        setClass(setFirstClassHelper, setSecondClassHelper)
       } else {
         setCurrentWordIndex(0)
-
-        setSecondClassHelper('behind')
-        setTimeout(() => {
-          setSecondClassHelper('in')
-        }, 80)
-
-        setFirstClassHelper('out')
+        setClass(setSecondClassHelper, setFirstClassHelper)
       }
     }
 
@@ -38,51 +49,36 @@ export default function RotatingName() {
     return () => clearInterval(interval)
   }, [currentWordIndex])
 
+  const generateWordComponents = (word: string, helperClass: string) => {
+    return word.split('').map((letter, index) => (
+      <span
+        key={index}
+        className={`name-letter ${helperClass}`}
+        style={{
+          transitionDelay: `${
+            helperClass === 'behind' ? 0 : index * animationDelay
+          }ms`,
+        }}
+      >
+        {letter === ' ' ? '\u00A0' : letter}
+      </span>
+    ))
+  }
+
   const words0 = useMemo(
-    () =>
-      words[0].split('').map((letter, index) => {
-        return (
-          <span
-            key={index}
-            className={`name-letter ${firstClassHelper}`}
-            style={{
-              transitionDelay: `${
-                firstClassHelper === 'behind' ? 0 : index * animationDelay
-              }ms`,
-            }}
-          >
-            {letter === ' ' ? `\u00A0` : letter}
-          </span>
-        )
-      }),
+    () => generateWordComponents(words[0], firstClassHelper),
     [firstClassHelper]
   )
-
   const words1 = useMemo(
-    () =>
-      words[1].split('').map((letter, index) => {
-        return (
-          <span
-            key={index}
-            className={`name-letter ${secondClassHelper}`}
-            style={{
-              transitionDelay: `${
-                secondClassHelper === 'behind' ? 0 : index * animationDelay
-              }ms`,
-            }}
-          >
-            {letter === ' ' ? `\u00A0` : letter}
-          </span>
-        )
-      }),
+    () => generateWordComponents(words[1], secondClassHelper),
     [secondClassHelper]
   )
 
   return (
     <div className="name-container">
       <p>
-        <span className="name-word neon">{words0}</span>
-        <span className="name-word mmm">{words1}</span>
+        <AnimatedWord className="neon" word={words0} />
+        <AnimatedWord className="mmm" word={words1} />
       </p>
     </div>
   )

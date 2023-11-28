@@ -31,3 +31,8 @@ export interface TestimonialCardProps {
   name: string
   role: string
 }
+
+export interface AnimatedWordProps {
+  className: string
+  word: ReactNode
+}
