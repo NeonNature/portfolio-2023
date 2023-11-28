@@ -1,4 +1,4 @@
-export default function TestimonialDividerStart() {
+export default function Wave_Testimonial() {
   return (
     <svg
       className="w-full"

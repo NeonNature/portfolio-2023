@@ -1,8 +1,8 @@
 'use client'
 import { useRef, useState } from 'react'
 import '../styles/contact.scss'
-import Icon_LinkedIn from './waves/Icon_LinkedIn'
-import Icon_Github from './waves/Icon_Github'
+import Icon_LinkedIn from '../assets/Icon_LinkedIn'
+import Icon_Github from '../assets/Icon_Github'
 import emailjs from '@emailjs/browser'
 
 const linkedinUrl = 'https://www.linkedin.com/in/min-maung-maung/'

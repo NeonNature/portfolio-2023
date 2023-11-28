@@ -1,4 +1,4 @@
-export default function WaveTwo() {
+export default function Wave_Projects() {
   return (
     <svg
       className="w-full"

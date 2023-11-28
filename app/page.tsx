@@ -1,14 +1,15 @@
 import RotatingName from './components/RotatingName'
-import IntroDivider from './components/waves/IntroDivider'
-import WaveTwo from './components/waves/WaveTwo'
 import RotatingAction from './components/RotatingAction'
 import Avatar from './components/Avatar'
 import Actions from './components/Actions'
 import Testimonials from './components/Testimonials'
-import TestimonialDividerStart from './components/waves/TestimonialDividerStart'
-import TestimonialDividerEnd from './components/waves/TestimonialDividerEnd'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+
+import Wave_Intro from './assets/Wave_Intro'
+import Wave_Projects from './assets/Wave_Projects'
+import Wave_Testimonial from './assets/Wave_Testimonial'
+import Wave_Contact from './assets/Wave_Contact'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -30,7 +31,7 @@ export default function Home() {
           <i className="intro-scroll-icon"></i>
         </div>
       </div>
-      <IntroDivider />
+      <Wave_Intro />
       <div className="content-two">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col items-center justify-center p-4">
@@ -41,13 +42,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <WaveTwo />
+      <Wave_Projects />
       <Projects />
-      <TestimonialDividerStart />
+      <Wave_Testimonial />
       <div className="content-five">
         <Testimonials />
       </div>
-      <TestimonialDividerEnd />
+      <Wave_Contact />
       <div className="content-six">
         <Contact />
       </div>

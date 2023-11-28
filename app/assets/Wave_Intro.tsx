@@ -1,4 +1,4 @@
-export default function IntroDivider() {
+export default function Wave_Intro() {
   return (
     <svg
       className="w-full"
