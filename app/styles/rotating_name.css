@@ -31,7 +31,7 @@
 }
 
 .mmm {
-  color: #2980b9;
+  color: var(--main-theme);
 }
 
 .neon {

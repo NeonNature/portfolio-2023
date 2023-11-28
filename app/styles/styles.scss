@@ -20,7 +20,7 @@ body {
 
 .intro-name-divider {
   padding: 2px 0;
-  background-color: #2980b9;
+  background-color: var(--main-theme);
   width: 111px;
   display: flex;
   margin: 30px auto 10px;
@@ -32,7 +32,7 @@ body {
 }
 
 .intro-scroll-icon {
-  border: solid #2980b9;
+  border: solid var(--main-theme);
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 5px;
@@ -49,7 +49,7 @@ body {
   @apply flex items-center justify-center;
   min-height: 100vh;
   background: linear-gradient(90deg, #fff 33%, rgba(0, 0, 0, 0) 33%),
-    linear-gradient(90deg, #2980b9 66%, #fff 66%);
+    linear-gradient(90deg, var(--main-theme) 66%, #fff 66%);
   margin-top: -140px;
   margin-bottom: -450px;
 }
@@ -57,7 +57,7 @@ body {
 @media (max-width: 767px) {
   .content-five {
     background: linear-gradient(90deg, #fff 10%, rgba(0, 0, 0, 0) 10%),
-      linear-gradient(90deg, #2980b9 90%, #fff 90%);
+      linear-gradient(90deg, var(--main-theme) 90%, #fff 90%);
   }
 }
 
