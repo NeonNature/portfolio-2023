@@ -16,7 +16,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 
-import './styles/styles.css'
+import './styles/styles.scss'
 
 export default function Home() {
   return (

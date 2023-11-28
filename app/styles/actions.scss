@@ -1,4 +1,5 @@
 @use 'highlight';
+@use 'animations';
 
 .action-icon {
   max-width: 75px;
@@ -45,20 +46,6 @@
   }
 }
 
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-}
-
 .details-content {
   @apply flex flex-row;
   border-radius: 16px;
@@ -98,18 +85,6 @@
     right: 0;
     box-shadow: 22px 22px #252525;
     z-index: -2;
-  }
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 

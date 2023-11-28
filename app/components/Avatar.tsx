@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import avatar from '/public/avatar.jpg'
-import '../styles/avatar.css'
+import '../styles/avatar.scss'
 
 export default function Avatar() {
   return (
