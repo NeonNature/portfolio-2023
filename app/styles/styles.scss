@@ -40,6 +40,7 @@ body {
 }
 
 .intro-scroll-icon-wrapper {
+  @apply cursor-pointer;
   position: absolute;
   bottom: 20vh;
   animation: 3s floating infinite ease-in-out;
