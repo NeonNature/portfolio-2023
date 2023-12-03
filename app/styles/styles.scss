@@ -5,11 +5,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.intro-underline {
-  text-decoration: underline wavy orange;
-}
-
-.content-two {
+.content-details {
   background-color: #0077b6;
   min-height: calc(25vh + 450px);
   margin-top: -450px;
@@ -26,7 +22,7 @@ body {
   margin: 30px auto 10px;
 }
 
-.content-one {
+.content-intro {
   @apply flex items-center justify-center;
   height: calc(100vh - 140px);
 }
@@ -46,7 +42,7 @@ body {
   animation: 3s floating infinite ease-in-out;
 }
 
-.content-five {
+.content-testimonials {
   @apply flex items-center justify-center;
   min-height: 100vh;
   background: linear-gradient(90deg, #fff 33%, rgba(0, 0, 0, 0) 33%),
@@ -56,13 +52,13 @@ body {
 }
 
 @media (max-width: 767px) {
-  .content-five {
+  .content-testimonials {
     background: linear-gradient(90deg, #fff 10%, rgba(0, 0, 0, 0) 10%),
       linear-gradient(90deg, var(--main-theme) 90%, #fff 90%);
   }
 }
 
-.content-six {
+.content-contact {
   @apply flex justify-center;
   background-color: #252525;
   min-height: 100vh;

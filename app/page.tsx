@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="w-full">
-      <div className="content-one">
+      <div className="content-intro">
         <div>
           <RotatingName />
           <hr className="intro-name-divider" />
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <Wave_Intro />
-      <div className="content-two" ref={detailsRef}>
+      <div className="content-details" ref={detailsRef}>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col items-center justify-center p-4">
             <Actions />
@@ -55,11 +55,11 @@ export default function Home() {
       <Wave_Projects />
       <Projects />
       <Wave_Testimonial />
-      <div className="content-five">
+      <div className="content-testimonials">
         <Testimonials />
       </div>
       <Wave_Contact />
-      <div className="content-six">
+      <div className="content-contact">
         <Contact />
       </div>
     </main>

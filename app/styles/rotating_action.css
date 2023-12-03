@@ -1,3 +1,6 @@
+.intro-underline {
+  text-decoration: underline wavy orange;
+}
 .rotating-action-word {
   vertical-align: -8px;
   display: inline-block;
