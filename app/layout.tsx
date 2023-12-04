@@ -7,11 +7,15 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Neon | Front End Developer',
+  metadataBase: new URL('https://voyager-neon.tech/'),
   description:
     'Min Maung Maung aka Neon is a Frontend Developer and UX/UI enthusiast from Myanmar. Crafting pixel-perfect designs and coding adventures, with a passion for continuous learning and exploration.',
   openGraph: {
+    url: 'https://voyager-neon.tech/',
     images: '/opengraph-image.jpg',
     title: 'Neon | Front End Developer',
+    locale: 'en_US',
+    type: 'website',
     description:
       'Min Maung Maung aka Neon is a Frontend Developer and UX/UI enthusiast from Myanmar. Crafting pixel-perfect designs and coding adventures, with a passion for continuous learning and exploration.',
   },
