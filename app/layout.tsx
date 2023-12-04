@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Neon | Front End Developer',
   description:
     'Min Maung Maung aka Neon is a Frontend Developer and UX/UI enthusiast from Myanmar. Crafting pixel-perfect designs and coding adventures, with a passion for continuous learning and exploration.',
+  openGraph: {
+    images: '/opengraph-image.jpg',
+    title: 'Neon | Front End Developer',
+    description:
+      'Min Maung Maung aka Neon is a Frontend Developer and UX/UI enthusiast from Myanmar. Crafting pixel-perfect designs and coding adventures, with a passion for continuous learning and exploration.',
+  },
 }
 
 export default function RootLayout({
